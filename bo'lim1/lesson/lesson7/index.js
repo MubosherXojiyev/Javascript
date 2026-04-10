@@ -28,7 +28,7 @@
 // }
 // 
 
-let = 9;
-for (let i =1; i<=n; i++){
-  for (let k = 1)  
-}
+// let = 9;
+// for (let i =1; i<=n; i++){
+//   for (let k = 1)  
+// }
