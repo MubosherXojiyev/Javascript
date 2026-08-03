@@ -38,5 +38,5 @@ console.log(false && false)
 console.log(false ?? 0);
 console.log(false ?? 0);
 console.log(false ?? 0);
-console.log(false ?? 0);      пдФВпжпдфв вфв рфви рфда ф пдффыы фыы ыфдфжв ывфтьуь96е9Ж  ФВ1
+console.log(false ?? 0);    
                                             
