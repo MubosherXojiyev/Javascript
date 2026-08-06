@@ -1,29 +1,69 @@
-// let arr = ["Olma", "Anor", "Uzum", "Nok"]
-// let len = arr.find((value, index, a) => {
-//     if(value === "Uzum") return value
-// })
-// console.log(len.length)
+// sort()
 
-// let arr = [5, 2, 7, 9, 5, 10, 1, 4]
-// let katta = Math.max(...arr)
-// let max = arr.findIndex((value, index, a) => {
-//     if(katta === value) return value
-// })
-// console.log(max)
+// let arr = [4, 2, 5, 1, 7, 3, 8, 9, 6]
+// let sortArr = arr.sort()
+// let sortArr = arr.sort((a, b) => a - b)
+// let sortArr = arr.sort((a, b) => b - a)
+// console.log(sortArr);
 
-// let arr = ["Olma", "Anor", "Uzum", "Nok"];
-// let len = 0;
-// let v = 0
-// let a = arr.forEach((value, index, a) => {
-//     if(value.length > len){
-//         len = value.length
-//         v = value
-//     }
-// });
-// console.log(v)
+// let arr = ["Olma", "Uzum", "Nok", "anor", "Anjir"]
+// let sortArr = arr.sort()
+// let sortArr = arr.sort((a, b) => a.localeCampaire(b))
+// let sortArr = arr.sort((a, b) => b.localeCompare(a))
+// console.log(sortArr);
 
-// let arr = ["Screatch", "Paython", "Html", "css", "Screatch", "Js", "React Js"];
-// let a = arr.findLastIndex((value, index, a) => {
-//     return value === "Screatch"
-// })
-// console.log(a)
+// every() - bu (&& - AND) operatoriga oxshab ishlaydi.
+// Barcha qiymat true ekanligini tekshiradi va true yoki false javob qaytaradi.
+
+// let arr = [ 1, "Algoritm", {ism: "Eshmat" }, true, null, undefined]
+// let arr = [ 1, "Algoritm", {ism: "Eshmat" }, true]
+// let arr = [1, 2, 3, 4, 5]
+// let isTruesy = arr.every((value) => value)
+// let isTruesy = arr.every((value) => value > 0)
+// console.log(isTruesy);
+
+// some - bu (|| - OR) operaturiga oxshab ishlaydi.
+// qiymatlar ichida 1 ta qiymat shartga mos tushsa yakuniy javob true boladi.
+// Aks holda false buladi.
+// let arr = [1, 2, 3, 4, 5]
+// let or = arr.some((value) => value)
+// let or = arr.some((value) => value > 0)
+// console.log(or);
+
+// flat - nested arraylarni parchalab 1ta arrayga aylantiradi.
+
+// let nestedArr = [1, 2, [3 ,4, [5 ,6, [7, 8, ]]]]
+// let arr = nestedArr.flat(0)
+// let arr = nestedArr.flat()
+// let arr = nestedArr.flat(Infinity)
+// console.log(arr);
+
+// flatMap = flat + map - bu return ga qaytarilgan array ni parchalaydi va
+// 1ta array paydo qilib beradi.
+
+// let arr = [1, 2, 3, 4, 5] 
+// let newArr = arr.map((value) => [value  2])
+// console.log(newArr);
+// let newArr = arr.flatMap((value) => [value  2])
+// console.log(newArr);
+
+// fill - Array ichidagi bosh joylarni qiymat bilan tuldirib beradi.
+
+// 1. []. ✅
+// 2. Array() ✅
+// 3, new Array() ❌
+
+// let arr1 = [3]
+// console.log(arr1)
+// let arr2 = Array(3)
+// let arr = arr2.fill("Algoritm")
+// let arr = arr2.fill(0)
+// console.log(arr);
+
+// copyWitthin - arrayni bir qismini copy qilib boshqa qismiga joylab beradi.
+
+// let arr = [1, 2 ,3, 4, 5, 6, 7, 8, 9]
+// [6, 7 ,8, 9, 5 ,6, 7, 8, 9]
+// [1, 2, 3, 4, 5, 1, 2, 3, 4]
+// let copyArr = arr.copyWithin(5, 0, 5)
+// console.log(copyArr);
