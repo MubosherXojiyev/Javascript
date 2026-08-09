@@ -67,3 +67,34 @@
 // [1, 2, 3, 4, 5, 1, 2, 3, 4]
 // let copyArr = arr.copyWithin(5, 0, 5)
 // console.log(copyArr);
+
+// let arr = [{ name: "Ali", age: 25 }, {name: "Vali", age: 17}, {name: "sami", age: 20}, {name: "john", age: 20}]
+// let newArr = arr.filter((value, index, a) =>{
+//     return arr
+// })
+// console.log(newArr);
+// let arr = ["apple", "banana", "cherry", "Watermelon"]
+// let len = 0;
+// let v = 0
+// let a = arr.forEach((value, index, a) => {
+//     if(value.length > len){
+//         len = value.length
+//         v = value
+//     }
+// });
+// console.log(v);
+
+// let arr =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50]
+// for (let  value of arr) {
+//    if(value % 10 === 0 ) {
+//     console.log(value);
+    
+//  }
+// }
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let sum = arr.reduce((acc, cur) => {
+    if(cur % 3  === 0 || cur % 2 === 0 ) return acc + cur
+    return acc
+}, 0);
+console.log(sum)
