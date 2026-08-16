@@ -1,0 +1,33 @@
+// MUTABLE 
+// push
+// pop
+// shift
+// unshift
+// reverse
+// splice
+// sort
+// fill
+// copyWithin
+
+
+// IMMUTABLE 
+// concat
+// slice
+// join
+// includes
+// indexOf
+// lastIndexOf
+// forEach
+// map
+// filter
+// reduce
+// find
+// findIndex
+// findLastIndex
+// some
+// every
+// flat
+// flatMap
+// Array.isArray
+// Array.from
+// Array.of
