@@ -52,8 +52,9 @@ let qoniqarsiz = "Ko'proq harakat qilish kk.";
 // ddd({ ism: "ilhomjon", yosh: "13", ball: 60 });
 // console.log(students);
 
-function nam(data, key) {
-  return data.sort((a, b) => a[key].localeCompare(b[key]));
-}     
-let sord = nam(students, "ism");
-console.log(sord);
+// function nam(data, key) {
+//   return data.sort((a, b) => a[key].localeCompare(b[key]));
+// }     
+// let sord = nam(students, "ism");
+// console.log(sord);
+
